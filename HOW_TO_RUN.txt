@@ -3,6 +3,21 @@ ECOSWAP - HOW TO RUN THE APPLICATION
 Guide
 
 
+MINIMUM SYSTEM REQUIREMENTS
+================================================================================
+
+For Local Setup:
+- Operating System: Windows 10/11, macOS 10.15+, or Linux (Ubuntu 20.04+)
+- Processor: Intel Core i3 or equivalent (dual-core minimum)
+- RAM: 4 GB minimum, 8 GB recommended
+- Storage: 2 GB free disk space
+- Internet: Stable connection for downloading dependencies
+
+For Online Access:
+- Any modern web browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
+- Internet: Stable connection
+
+
 OPTION 1: VIEW LIVE DEPLOYMENT (EASIEST)
 
 The application is deployed online and accessible at:
