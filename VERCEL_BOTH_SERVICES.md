@@ -1,6 +1,7 @@
 # Deploy BOTH on Vercel (5 Minutes - WORKS GUARANTEED)
 
 ## Why Vercel for Everything?
+
 - ✅ BEST TypeScript support
 - ✅ Handles monorepos perfectly
 - ✅ No cache nightmares
@@ -29,6 +30,7 @@ Click **"Add New..."** → **"Project"**
 Select: **EcoSwap-fullstack**
 
 **Configure:**
+
 - Framework Preset: **Other**
 - Root Directory: `backend`
 - Build Command: `npm install && npm run build && npx prisma generate`
@@ -36,6 +38,7 @@ Select: **EcoSwap-fullstack**
 - Install Command: `npm install`
 
 **Environment Variables:**
+
 ```
 DATABASE_URL=postgresql://YOUR-NEON-CONNECTION-STRING
 JWT_SECRET=8d9f7e6a5c4b3a2d1e0f9g8h7i6j5k4l3m2n1o0p9q8r7s6t5u4v3w2x1y0z
