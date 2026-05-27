@@ -3,7 +3,8 @@ import path from 'path'
 import fs from 'fs'
 
 // Create uploads directory if it doesn't exist
-const uploadsDir = 'uploads'
+// Use /tmp for serverless environments like Vercel
+const uploadsDir = process.env.NODE_ENV === 'production' ? '/tmp/uploads' : 'uploads'
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true })
 }

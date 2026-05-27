@@ -42,7 +42,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Serve uploaded files
-app.use('/uploads', express.static('uploads'))
+const uploadsPath = process.env.NODE_ENV === 'production' ? '/tmp/uploads' : 'uploads'
+app.use('/uploads', express.static(uploadsPath))
 
 // Root route
 app.get('/', (req, res) => {
