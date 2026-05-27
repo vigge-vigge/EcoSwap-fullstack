@@ -1,0 +1,139 @@
+================================================================================
+                    ECOSWAP - HOW TO RUN THE APPLICATION
+                         Quick Guide for Lecturers
+================================================================================
+
+OPTION 1: VIEW LIVE DEPLOYMENT (EASIEST)
+================================================================================
+
+The application is deployed online and accessible at:
+
+Frontend: https://eco-swap-fullstack-ggsu-git-main-vigges-projects-0s0f7962.vercel.app
+Backend:  https://eco-swap-fullstack.vercel.app
+
+Simply visit the frontend URL in any web browser to use the application.
+
+Test Credentials:
+- Email: admin@ecoswap.com
+- Password: admin123
+
+
+OPTION 2: RUN LOCALLY ON YOUR COMPUTER
+================================================================================
+
+PREREQUISITES:
+--------------
+1. Node.js (version 18 or higher) - Download from https://nodejs.org
+2. PostgreSQL database - Download from https://www.postgresql.org/download/
+3. Git - Download from https://git-scm.com/downloads
+
+INSTALLATION STEPS:
+-------------------
+
+1. Clone the Repository:
+   Open Command Prompt or Terminal and run:
+   
+   git clone https://github.com/vigge-vigge/EcoSwap-fullstack.git
+   cd EcoSwap-fullstack
+
+
+2. Set Up the Backend:
+   
+   cd backend
+   npm install
+   
+   Create a file named ".env" in the backend folder with this content:
+   
+   DATABASE_URL="postgresql://postgres:password@localhost:5432/ecoswap"
+   JWT_SECRET="8d9f7e6a5c4b3a2d1e0f9g8h7i6j5k4l3m2n1o0p9q8r7s6t5u4v3w2x1y0z"
+   NODE_ENV="development"
+   PORT=5000
+   
+   (Replace "password" with your PostgreSQL password)
+
+
+3. Set Up the Database:
+   
+   npx prisma migrate deploy
+   npx prisma db seed
+   
+   This creates the database tables and adds sample data.
+
+
+4. Set Up the Frontend:
+   
+   cd ../frontend
+   npm install
+   
+   Create a file named ".env" in the frontend folder with this content:
+   
+   VITE_API_URL=http://localhost:5000
+
+
+5. Start the Application:
+   
+   Open TWO terminal windows:
+   
+   Terminal 1 (Backend):
+   cd backend
+   npm run dev
+   
+   Terminal 2 (Frontend):
+   cd frontend
+   npm run dev
+
+
+6. Access the Application:
+   
+   Open your web browser and visit:
+   http://localhost:5173
+   
+   Login with:
+   - Email: admin@ecoswap.com
+   - Password: admin123
+
+
+TROUBLESHOOTING:
+================================================================================
+
+Problem: "Port already in use"
+Solution: Stop other applications using ports 5000 or 5173
+
+Problem: "Database connection failed"
+Solution: Ensure PostgreSQL is running and DATABASE_URL is correct
+
+Problem: "Module not found" errors
+Solution: Delete node_modules folders and run "npm install" again
+
+Problem: Frontend shows blank page
+Solution: Clear browser cache (Ctrl+Shift+R) or use incognito mode
+
+
+FEATURES TO DEMONSTRATE:
+================================================================================
+
+1. User Registration/Login
+2. Browse Items (eco-friendly products)
+3. Post New Items (free or paid)
+4. Secure Checkout & Order Tracking
+5. Real-time Messaging between users
+6. Admin Dashboard (user/item management)
+7. Order Management (buyer/seller views)
+
+
+TECHNOLOGY STACK:
+================================================================================
+
+Frontend:  React 18, TypeScript, Vite, Tailwind CSS
+Backend:   Node.js, Express, TypeScript
+Database:  PostgreSQL with Prisma ORM
+Auth:      JWT-based authentication
+Deployment: Vercel (frontend & backend), Railway (database)
+
+
+CONTACT:
+================================================================================
+
+For issues or questions, check the README.md file or contact the developer.
+
+Repository: https://github.com/vigge-vigge/EcoSwap-fullstack
