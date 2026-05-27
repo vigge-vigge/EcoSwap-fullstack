@@ -43,6 +43,22 @@ app.use(express.urlencoded({ extended: true }))
 // Serve uploaded files
 app.use('/uploads', express.static('uploads'))
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    message: 'EcoSwap API', 
+    endpoints: {
+      health: '/api/health',
+      auth: '/api/auth',
+      items: '/api/items',
+      messages: '/api/messages',
+      admin: '/api/admin',
+      orders: '/api/orders'
+    }
+  })
+})
+
 // Routes
 app.use('/api/auth', authRoutes)
 app.use('/api/items', itemRoutes)
