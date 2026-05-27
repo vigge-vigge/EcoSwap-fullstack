@@ -16,6 +16,7 @@ const app = express()
 const allowedOrigins = [
   'http://localhost:3000',
   process.env.FRONTEND_URL, // Production frontend URL
+  'https://eco-swap-fullstack-ggsu-git-main-vigges-projects-0s0f7962.vercel.app',
 ].filter(Boolean) // Remove undefined values
 
 // Middleware
