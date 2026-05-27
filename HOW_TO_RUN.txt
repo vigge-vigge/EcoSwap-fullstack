@@ -1,10 +1,9 @@
-================================================================================
-                    ECOSWAP - HOW TO RUN THE APPLICATION
-                         Quick Guide for Lecturers
-================================================================================
+
+ECOSWAP - HOW TO RUN THE APPLICATION
+Guide
+
 
 OPTION 1: VIEW LIVE DEPLOYMENT (EASIEST)
-================================================================================
 
 The application is deployed online and accessible at:
 
@@ -17,11 +16,13 @@ Test Credentials:
 - Email: admin@ecoswap.com
 - Password: admin123
 
+Unfortunately due to time constrainte, the connection between the frontend and backend couldn't be made
+which means, to fully acess the system, it must be ran locally which brings me to the second option.
 
 OPTION 2: RUN LOCALLY ON YOUR COMPUTER
-================================================================================
 
-PREREQUISITES:
+
+Requirements:
 --------------
 1. Node.js (version 18 or higher) - Download from https://nodejs.org
 2. PostgreSQL database - Download from https://www.postgresql.org/download/
@@ -93,8 +94,7 @@ INSTALLATION STEPS:
    - Password: admin123
 
 
-TROUBLESHOOTING:
-================================================================================
+Common problems:
 
 Problem: "Port already in use"
 Solution: Stop other applications using ports 5000 or 5173
@@ -110,7 +110,6 @@ Solution: Clear browser cache (Ctrl+Shift+R) or use incognito mode
 
 
 FEATURES TO DEMONSTRATE:
-================================================================================
 
 1. User Registration/Login
 2. Browse Items (eco-friendly products)
@@ -121,8 +120,8 @@ FEATURES TO DEMONSTRATE:
 7. Order Management (buyer/seller views)
 
 
-TECHNOLOGY STACK:
-================================================================================
+TECH STACK:
+
 
 Frontend:  React 18, TypeScript, Vite, Tailwind CSS
 Backend:   Node.js, Express, TypeScript
@@ -131,9 +130,5 @@ Auth:      JWT-based authentication
 Deployment: Vercel (frontend & backend), Railway (database)
 
 
-CONTACT:
-================================================================================
 
-For issues or questions, check the README.md file or contact the developer.
-
-Repository: https://github.com/vigge-vigge/EcoSwap-fullstack
+THANK YOU :)
